@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Library — головна сторінка</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">Libra<span>Flow</span></a>
+      <nav class="nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link nav__link--active" href="index.html">Головна</a></li>
+          <li><a class="nav__link" href="pages/catalog.html">Каталог та видачі</a></li>
+          <li><a class="nav__link" href="pages/readers.html">Читачі</a></li>
+          <li><a class="nav__link" href="pages/authors.html">Автори</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary" href="pages/catalog.html#new-loan">+ Нова видача</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Порядок у каталозі. Світ історій.</p>
+          <h1 class="hero__title">Зручна бібліотека. Більше можливостей для читання.</h1>
+          <p class="hero__text">Об’єднуйте книги, авторів, читачів і видачі в єдиній системі обліку онлайн-бібліотеки.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="pages/catalog.html">Переглянути каталог</a>
+            <a class="btn btn--secondary" href="pages/catalog.html#loans">Керувати видачами</a>
+          </div>
+        </div>
+
+<aside class="spotlight" aria-label="Рекомендована книга">
+          <p class="spotlight__label">З фонду бібліотеки</p>
+          <article class="spotlight__card">
+            <img class="spotlight__img" src="assets/img/book-creative-act.jpg" alt="Обкладинка книги Творчий акт: спосіб буття" width="140" height="190">
+            <div class="spotlight__body">
+              <h2 class="spotlight__title">Книга на черзі</h2>
+              <p class="spotlight__author">Рік Рубін · Творчий акт: спосіб буття</p>
+              <a class="spotlight__link" href="pages/catalog.html#book-1">Картка книги</a>
+            </div>
+          </article>
+          <p class="spotlight__note">Кожна книга має своє місце, кожен читач — свою історію.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats section container" aria-label="Ключові показники бібліотеки">
+      <div class="stats__grid">
+        <article class="stat-card">
+          <p class="stat-card__value">2,450</p>
+          <p class="stat-card__label">Книг у фонді</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-card__value">186</p>
+          <p class="stat-card__label">Авторів у каталозі</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-card__value">1,208</p>
+          <p class="stat-card__label">Активних читачів</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-card__value">148</p>
+          <p class="stat-card__label">Активних видач</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="modules section container">
+      <h2 class="section__title">Основні сутності системи</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="card__meta">01 · 2,450 книг</p>
+          <h3 class="card__title">Каталог книг (Book)</h3>
+          <p class="card__text">Перегляд назв, жанрів, наявності примірників і карток видань.</p>
+          <a class="card__link" href="pages/catalog.html">До каталогу книг</a>
+        </article>
+        <article class="card">
+          <p class="card__meta">02 · 186 авторів</p>
+          <h3 class="card__title">Довідник авторів (Author)</h3>
+          <p class="card__text">Перелік авторів та зв’язок кожного творця з його книгами в бібліотеці.</p>
+          <a class="card__link" href="pages/authors.html">До списку авторів</a>
+        </article>
+        <article class="card">
+          <p class="card__meta">03 · 1,208 читачів</p>
+          <h3 class="card__title">Реєстр читачів (Reader)</h3>
+          <p class="card__text">Облік читацьких профілів, контактних даних та історії користування.</p>
+          <a class="card__link" href="pages/readers.html">До реєстру читачів</a>
+        </article>
+        <article class="card">
+          <p class="card__meta">04 · 148 видач</p>
+          <h3 class="card__title">Облік видач (Loan)</h3>
+          <p class="card__text">Оформлення видачі, контроль термінів повернення та статусів примірників.</p>
+          <a class="card__link" href="pages/catalog.html#loans">Перейти до видач</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="recent-loans section container">
+      <div class="section__header">
+        <h2 class="section__title">Останні видачі</h2>
+        <a class="section__link" href="pages/catalog.html#loans">Усі видачі</a>
+      </div>
+      <div class="loans-list">
+        <article class="loan-row">
+          <h3 class="loan-row__book">Творчий акт: спосіб буття — Рік Рубін</h3>
+          <p class="loan-row__reader">Читач: Олівія Мартін</p>
+          <p class="loan-row__date">Повернути до: 24 жовт. 2025</p>
+          <span class="badge badge--active">Активна</span>
+        </article>
+        <article class="loan-row">
+          <h3 class="loan-row__book">Опівнічна бібліотека — Метт Гейґ</h3>
+          <p class="loan-row__reader">Читач: Джеймс Вілсон</p>
+          <p class="loan-row__date">Повернути до: 25 жовт. 2025</p>
+          <span class="badge badge--active">Активна</span>
+        </article>
+        <article class="loan-row">
+          <h3 class="loan-row__book">Атомні звички — Джеймс Клір</h3>
+          <p class="loan-row__reader">Читач: Емма Томпсон</p>
+          <p class="loan-row__date">Повернути до: 21 жовт. 2025</p>
+          <span class="badge badge--returned">Повернено</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">Libra<span>Flow</span></p>
+        <p class="footer__text">Онлайн-бібліотека: книги, автори, читачі та видачі.</p>
+      </div>
+      <ul class="footer__list">
+        <li><a href="pages/catalog.html">Каталог</a></li>
+        <li><a href="pages/readers.html">Читачі</a></li>
+        <li><a href="pages/authors.html">Автори</a></li>
+      </ul>
+      <p class="footer__copy">© 2026 Online Library</p>
+    </div>
+  </footer>
+</body>
+</html>

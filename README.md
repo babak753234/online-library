@@ -1,2 +1,15 @@
-# online-library
-Web-based Online Library Management System for managing books, authors, readers, and book loans.
+# README.md
+# Online Library — система управління бібліотекою
+
+Наскрізний проєкт з дисципліни «WEB-програмування» (сутності: author, book, reader, loan).
+Виконав: [Бабак Д.О.], група [КІ24], варіант Онлайн-бібліотека.
+
+## Стек технологій
+HTML5, CSS3 (Grid, Flexbox), JavaScript (ES2023), Node.js, Express, PostgreSQL / MySQL.
+
+## Структура
+| Каталог | Призначення |
+| ------- | ----------- |
+| `src/`  | клієнтська частина та вихідний код |
+| `docs/` | вимоги та макети інтерфейсу |
+| `labs/` | звіти з лабораторних робіт |

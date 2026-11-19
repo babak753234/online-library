@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Library — каталог книг і видачі</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="../index.html">Libra<span>Flow</span></a>
+      <nav class="nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../index.html">Головна</a></li>
+          <li><a class="nav__link nav__link--active" href="catalog.html">Каталог та видачі</a></li>
+          <li><a class="nav__link" href="readers.html">Читачі</a></li>
+          <li><a class="nav__link" href="authors.html">Автори</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary" href="#new-loan">+ Нова видача</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page-head section container">
+      <p class="page-head__breadcrumb">Бібліотека / Довідник</p>
+      <div class="page-head__top">
+        <div>
+          <h1 class="page-head__title">Каталог книг та видач</h1>
+          <p class="page-head__subtitle">Усі видання, автори, читачі та записи про видачі в одному місці.</p>
+        </div>
+        <a class="btn btn--primary" href="#new-loan">+ Нова видача</a>
+      </div>
+
+      <div class="stats__grid">
+        <article class="stat-card">
+          <p class="stat-card__value">1,284</p>
+          <p class="stat-card__label">Усього видач</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-card__value">148</p>
+          <p class="stat-card__label">Активні видачі</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-card__value">12</p>
+          <p class="stat-card__label">Прострочені видачі</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" aria-label="Фільтрація та пошук">
+      <nav class="subnav" aria-label="Розділи довідника">
+        <ul class="subnav__list">
+          <li><a class="subnav__link subnav__link--active" href="#loans">Видачі (Loan)</a></li>
+          <li><a class="subnav__link" href="#books">Книги (Book)</a></li>
+          <li><a class="subnav__link" href="readers.html">Читачі (Reader)</a></li>
+          <li><a class="subnav__link" href="authors.html">Автори (Author)</a></li>
+        </ul>
+      </nav>
+
+      <aside class="filters-panel" aria-label="Параметри фільтрації">
+        <form class="filters-form" action="#" method="get">
+          <label class="visually-hidden" for="search-query">Пошук за назвою книги, автором або читачем</label>
+          <input id="search-query" class="filters-form__input" type="search" name="q" placeholder="Пошук за книгою, автором або читачем...">
+          <select class="filters-form__select" name="status" aria-label="Фільтр за статусом видачі">
+            <option value="all">Статус: Усі</option>
+            <option value="active">Активна</option>
+            <option value="returned">Повернено</option>
+            <option value="overdue">Прострочено</option>
+          </select>
+          <select class="filters-form__select" name="sort" aria-label="Сортування">
+            <option value="due_asc">Термін повернення</option>
+            <option value="newest">Найновіші</option>
+          </select>
+        </form>
+      </aside>
+    </section>
+
+    <section id="loans" class="section container">
+      <div class="section__header">
+        <h2 class="section__title">Усі видачі (Loan)</h2>
+        <p class="section__meta">1,284 записи · Сортування: за датою</p>
+      </div>
+
+      <div class="workspace">
+        <aside class="workspace__sidebar--left" aria-label="Швидкі фільтри та сутності">
+          <h3>Сутності бібліотеки</h3>
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item"><span>Книги (Book)</span><strong>4</strong></li>
+            <li class="sidebar-list__item"><span>Автори (Author)</span><strong>4</strong></li>
+            <li class="sidebar-list__item"><span>Читачі (Reader)</span><strong>3</strong></li>
+            <li class="sidebar-list__item"><span>Видачі (Loan)</span><strong>3</strong></li>
+          </ul>
+          <a class="btn btn--secondary" href="authors.html">Довідник авторів</a>
+        </aside>
+
+        <div class="workspace__center">
+          <div class="loans-table">
+            <article class="loan-item">
+              <h3 class="loan-item__title">Творчий акт: спосіб буття</h3>
+              <p class="loan-item__author">Рік Рубін · Творчість і самовираження</p>
+              <p class="loan-item__reader">Читач: Олівія Мартін</p>
+              <p class="loan-item__dates">Видано: 10 жовт. 2025 · Повернути: 24 жовт. 2025</p>
+              <span class="badge badge--active">Активна</span>
+            </article>
+
+            <article class="loan-item">
+              <h3 class="loan-item__title">Опівнічна бібліотека</h3>
+              <p class="loan-item__author">Метт Гейґ · Художня література</p>
+              <p class="loan-item__reader">Читач: Джеймс Вілсон</p>
+              <p class="loan-item__dates">Видано: 11 жовт. 2025 · Повернути: 25 жовт. 2025</p>
+              <span class="badge badge--active">Активна</span>
+            </article>
+
+            <article class="loan-item">
+              <h3 class="loan-item__title">Коротка історія мистецтва</h3>
+              <p class="loan-item__author">Шарлотт Маллінз · Історія мистецтв</p>
+              <p class="loan-item__reader">Читач: Ноа Девіс</p>
+              <p class="loan-item__dates">Видано: 04 жовт. 2025 · Повернути: 18 жовт. 2025</p>
+              <span class="badge badge--overdue">Прострочено</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="workspace__sidebar--right" aria-label="Підказки та стан видач">
+          <h3>Статус видач</h3>
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item"><span>Активні</span><span class="badge badge--active">148</span></li>
+            <li class="sidebar-list__item"><span>Прострочені</span><span class="badge badge--overdue">12</span></li>
+          </ul>
+          <p class="card__text">Кожна видача (Loan) пов’язує примірник книги (Book) із профілем читача (Reader).</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="books" class="section container">
+      <h2 class="section__title">Книги каталогу (Book)</h2>
+      <div class="cards">
+        <article id="book-1" class="card">
+          <img class="card__img" src="../assets/img/book-creative-act.jpg" alt="Творчий акт: спосіб буття" width="240" height="160">
+          <h3 class="card__title">Творчий акт: спосіб буття</h3>
+          <p class="card__text">Автор: Рік Рубін · Доступно примірників: 4</p>
+          <span class="badge badge--active">Доступна</span>
+        </article>
+        <article class="card">
+          <img class="card__img" src="../assets/img/book-midnight-library.jpg" alt="Опівнічна бібліотека" width="240" height="160">
+          <h3 class="card__title">Опівнічна бібліотека</h3>
+          <p class="card__text">Автор: Метт Гейґ · Доступно примірників: 2</p>
+          <span class="badge badge--active">Доступна</span>
+        </article>
+        <article class="card">
+          <img class="card__img" src="../assets/img/book-atomic-habits.jpg" alt="Атомні звички" width="240" height="160">
+          <h3 class="card__title">Атомні звички</h3>
+          <p class="card__text">Автор: Джеймс Клір · Доступно примірників: 0</p>
+          <span class="badge badge--returned">Видана</span>
+        </article>
+        <article class="card">
+          <img class="card__img" src="../assets/img/book-art-history.jpg" alt="Коротка історія мистецтва" width="240" height="160">
+          <h3 class="card__title">Коротка історія мистецтва</h3>
+          <p class="card__text">Автор: Шарлотт Маллінз · Доступно примірників: 3</p>
+          <span class="badge badge--active">Доступна</span>
+        </article>
+      </div>
+    </section>
+
+    <aside class="info-banner container" aria-label="Правила зв’язків сутностей">
+      <h2 class="info-banner__title">Пов’язаність сутностей</h2>
+      <p class="info-banner__text">Кожна книга (Book) пов’язана з автором (Author), а кожна видача (Loan) об’єднує один примірник книги та одного читача (Reader).</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">Libra<span>Flow</span></p>
+        <p class="footer__text">Онлайн-бібліотека: книги, автори, читачі та видачі.</p>
+      </div>
+      <ul class="footer__list">
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="readers.html">Читачі</a></li>
+        <li><a href="authors.html">Автори</a></li>
+      </ul>
+      <p class="footer__copy">© 2026 Online Library</p>
+    </div>
+  </footer>
+</body>
+</html>

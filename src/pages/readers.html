@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Library — читачі</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="../index.html">Libra<span>Flow</span></a>
+      <nav class="nav" aria-label="Головне меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../index.html">Головна</a></li>
+          <li><a class="nav__link" href="catalog.html">Каталог та видачі</a></li>
+          <li><a class="nav__link nav__link--active" href="readers.html">Читачі</a></li>
+          <li><a class="nav__link" href="authors.html">Автори</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--primary" href="catalog.html#new-loan">+ Нова видача</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page-head section container">
+      <p class="page-head__breadcrumb">Бібліотека / Читачі</p>
+      <h1 class="page-head__title">Реєстр читачів (Reader)</h1>
+      <p class="page-head__subtitle">Профілі користувачів бібліотеки, активні видачі та статус читацького квитка.</p>
+    </section>
+
+    <section class="section container">
+      <h2 class="section__title">Список читачів</h2>
+      <div class="cards">
+        <article class="card">
+          <h3 class="card__title">Олівія Мартін</h3>
+          <p class="card__meta">Квиток № R-1042 · olivia.martin@example.com</p>
+          <p class="card__text">Активних видач: 1 («Творчий акт»).</p>
+          <span class="badge badge--active">Активний</span>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Джеймс Вілсон</h3>
+          <p class="card__meta">Квиток № R-1089 · james.wilson@example.com</p>
+          <p class="card__text">Активних видач: 1 («Північна бібліотека»).</p>
+          <span class="badge badge--active">Активний</span>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Ноа Девіс</h3>
+          <p class="card__meta">Квиток № R-1115 · noah.davis@example.com</p>
+          <p class="card__text">Є прострочена видача («Коротка історія мистецтва»).</p>
+          <span class="badge badge--overdue">Заборгованість</span>
+        </article>
+      </div>
+    </section>
+
+    <aside class="info-aside section container" aria-label="Правила обслуговування читачів">
+      <h2 class="info-aside__title">Правила видачі для читачів</h2>
+      <p class="info-aside__text">Оформлення нової видачі (Loan) доступне за відсутності прострочених книг на рахунку читача.</p>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">Libra<span>Flow</span></p>
+        <p class="footer__text">Онлайн-бібліотека: книги, автори, читачі та видачі.</p>
+      </div>
+      <ul class="footer__list">
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="readers.html">Читачі</a></li>
+        <li><a href="authors.html">Автори</a></li>
+      </ul>
+      <p class="footer__copy">© 2026 Online Library</p>
+    </div>
+  </footer>
+</body>
+</html>
